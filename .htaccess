@@ -1,0 +1,134 @@
+# =================================================
+# imis.cscro8.com — Root .htaccess
+# public_html/imis/.htaccess
+# =================================================
+
+# -------------------------------------------------
+# GLOBAL SETTINGS
+# -------------------------------------------------
+AddDefaultCharset UTF-8
+Options -Indexes
+DirectoryIndex dashboard.php login.php
+
+# -------------------------------------------------
+# PHP CONFIGURATION (Commented out for LiteSpeed)
+# -------------------------------------------------
+# WARNING: LiteSpeed throws 500 errors if php_value is used here.
+# Please set these in Hostinger hPanel -> PHP Configuration instead.
+# php_value display_errors        Off
+# php_value mbstring.http_input   auto
+# php_value date.timezone         Asia/Manila
+# php_value max_execution_time    30
+# php_value memory_limit          128M
+# php_value max_input_vars        3000
+# php_value upload_max_filesize   100M
+# php_value post_max_size         100M
+
+# -------------------------------------------------
+# SECURITY & CACHE HEADERS
+# -------------------------------------------------
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options         "SAMEORIGIN"
+    Header always set X-Content-Type-Options  "nosniff"
+    Header always set X-XSS-Protection        "1; mode=block"
+    Header unset Server
+    Header unset X-Powered-By
+
+    # Force browsers to ALWAYS fetch fresh HTML/PHP files
+    <FilesMatch "\.(html|htm|php)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+
+    # Cache static assets
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|webp|woff|woff2|ttf|eot)$">
+        Header set Cache-Control "public, max-age=2592000, immutable"
+    </FilesMatch>
+</IfModule>
+
+# -------------------------------------------------
+# COMPRESSION
+# -------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE \
+        text/html text/plain text/xml text/css text/javascript \
+        application/javascript application/x-javascript \
+        application/json application/xml application/rss+xml \
+        application/xhtml+xml image/svg+xml image/x-icon \
+        application/x-font-ttf application/x-font-otf \
+        application/x-font-woff application/x-font-woff2 \
+        font/opentype font/otf font/ttf \
+        application/vnd.ms-fontobject
+</IfModule>
+
+# -------------------------------------------------
+# BROWSER CACHING (Updated for Real-Time HTML)
+# -------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault                          "access plus 1 week"
+
+    # Force HTML to expire immediately
+    ExpiresByType text/html                 "access plus 0 seconds"
+
+    # Keep static assets cached
+    ExpiresByType application/json          "access plus 5 minutes"
+    ExpiresByType text/css                  "access plus 1 month"
+    ExpiresByType application/javascript    "access plus 1 month"
+    ExpiresByType application/x-javascript  "access plus 1 month"
+    ExpiresByType text/javascript           "access plus 1 month"
+    ExpiresByType image/jpeg                "access plus 1 month"
+    ExpiresByType image/jpg                 "access plus 1 month"
+    ExpiresByType image/png                 "access plus 1 month"
+    ExpiresByType image/gif                 "access plus 1 month"
+    ExpiresByType image/webp                "access plus 1 month"
+    ExpiresByType image/svg+xml             "access plus 1 month"
+    ExpiresByType image/x-icon              "access plus 1 year"
+    ExpiresByType font/opentype             "access plus 1 year"
+    ExpiresByType font/ttf                  "access plus 1 year"
+    ExpiresByType application/x-font-ttf    "access plus 1 year"
+    ExpiresByType application/x-font-woff   "access plus 1 year"
+    ExpiresByType application/x-font-woff2  "access plus 1 year"
+</IfModule>
+
+# -------------------------------------------------
+# SENSITIVE FILE BLOCK
+# -------------------------------------------------
+# Combined to include .env.example
+<FilesMatch "(\.env|\.env\.example|\.log|\.sql|\.sh|\.ini|composer\.(json|lock))$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# -------------------------------------------------
+# URL REWRITING & DIRECTORY PROTECTION
+# -------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 1. Deny access to specific internal directories
+    RewriteRule ^storage/   - [F,L]
+    RewriteRule ^config/    - [F,L]
+
+    # 2. Strip .php only for GET requests
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ /%1 [R=301,L]
+
+    # 3. Short-circuit real files and directories
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # 4. Clean URL → PHP (supports subdirectories)
+    RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+    RewriteRule ^(.+?)/?$ $1.php [L]
+</IfModule>

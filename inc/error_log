@@ -1,0 +1,78 @@
+[09-Jan-2026 18:38:13 Asia/Manila] LoginLogger: Logout attempt - logId: 4908, userId: 29, username: lklepasana, reason: manual
+[09-Jan-2026 18:38:13 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 4908
+[09-Jan-2026 18:38:13 Asia/Manila] User logout logged: lklepasana - Reason: manual
+[02-Feb-2026 13:04:41 Asia/Manila] LoginLogger: Logout attempt - logId: 5488, userId: 45, username: mvsoledad, reason: manual
+[02-Feb-2026 13:04:41 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5488
+[02-Feb-2026 13:04:41 Asia/Manila] User logout logged: mvsoledad - Reason: manual
+[02-Feb-2026 13:15:24 Asia/Manila] LoginLogger: Logout attempt - logId: 5486, userId: 10, username: rsbasiano, reason: idle
+[02-Feb-2026 13:15:24 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5486
+[02-Feb-2026 13:15:24 Asia/Manila] User logout logged: rsbasiano - Reason: idle
+[02-Feb-2026 14:15:09 Asia/Manila] LoginLogger: Logout attempt - logId: 5491, userId: 23, username: rmestoque, reason: manual
+[02-Feb-2026 14:15:09 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5491
+[02-Feb-2026 14:15:09 Asia/Manila] User logout logged: rmestoque - Reason: manual
+[02-Feb-2026 14:56:40 Asia/Manila] LoginLogger: Logout attempt - logId: 5493, userId: 48, username: jatan, reason: idle
+[02-Feb-2026 14:56:40 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5493
+[02-Feb-2026 14:56:40 Asia/Manila] User logout logged: jatan - Reason: idle
+[02-Feb-2026 17:06:26 Asia/Manila] LoginLogger: Logout attempt - logId: 5489, userId: 45, username: mvsoledad, reason: idle
+[02-Feb-2026 17:06:26 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5489
+[02-Feb-2026 17:06:26 Asia/Manila] User logout logged: mvsoledad - Reason: idle
+[06-Feb-2026 11:26:57 Asia/Manila] LoginLogger: Logout attempt - logId: 5640, userId: 41, username: sasalvo, reason: idle
+[06-Feb-2026 11:26:57 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5640
+[06-Feb-2026 11:26:57 Asia/Manila] User logout logged: sasalvo - Reason: idle
+[06-Feb-2026 12:45:10 Asia/Manila] LoginLogger: Logout attempt - logId: 5643, userId: 14, username: etcasinillo, reason: idle
+[06-Feb-2026 12:45:10 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5643
+[06-Feb-2026 12:45:10 Asia/Manila] User logout logged: etcasinillo - Reason: idle
+[06-Feb-2026 13:00:32 Asia/Manila] LoginLogger: Logout attempt - logId: 5644, userId: 44, username: cbsoledad, reason: idle
+[06-Feb-2026 13:00:32 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5644
+[06-Feb-2026 13:00:32 Asia/Manila] User logout logged: cbsoledad - Reason: idle
+[06-Feb-2026 13:51:32 Asia/Manila] LoginLogger: Logout attempt - logId: 5638, userId: 10, username: rsbasiano, reason: idle
+[06-Feb-2026 13:51:32 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5638
+[06-Feb-2026 13:51:32 Asia/Manila] User logout logged: rsbasiano - Reason: idle
+[06-Feb-2026 15:01:22 Asia/Manila] LoginLogger: Logout attempt - logId: 5652, userId: 62, username: jpgerilla, reason: manual
+[06-Feb-2026 15:01:22 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5652
+[06-Feb-2026 15:01:22 Asia/Manila] User logout logged: jpgerilla - Reason: manual
+[06-Feb-2026 17:14:08 Asia/Manila] LoginLogger: Logout attempt - logId: 5656, userId: 9, username: kmbanoyo, reason: idle
+[06-Feb-2026 17:14:08 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 5656
+[06-Feb-2026 17:14:08 Asia/Manila] User logout logged: kmbanoyo - Reason: idle
+[26-Feb-2026 14:36:02 Asia/Manila] LoginLogger: Logout attempt - logId: 6445, userId: 9, username: kmbanoyo, reason: manual
+[26-Feb-2026 14:36:02 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6445
+[26-Feb-2026 14:36:02 Asia/Manila] User logout logged: kmbanoyo - Reason: manual
+[26-Feb-2026 15:07:24 Asia/Manila] LoginLogger: Logout attempt - logId: 6449, userId: 3, username: rmamor, reason: manual
+[26-Feb-2026 15:07:24 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6449
+[26-Feb-2026 15:07:24 Asia/Manila] User logout logged: rmamor - Reason: manual
+[26-Feb-2026 15:08:21 Asia/Manila] LoginLogger: Logout attempt - logId: 6442, userId: 45, username: mvsoledad, reason: manual
+[26-Feb-2026 15:08:21 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6442
+[26-Feb-2026 15:08:21 Asia/Manila] User logout logged: mvsoledad - Reason: manual
+[26-Feb-2026 16:20:03 Asia/Manila] LoginLogger: Logout attempt - logId: 6451, userId: 7, username: pqaurelia, reason: idle
+[26-Feb-2026 16:20:03 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6451
+[26-Feb-2026 16:20:03 Asia/Manila] User logout logged: pqaurelia - Reason: idle
+[26-Feb-2026 16:28:20 Asia/Manila] LoginLogger: Logout attempt - logId: 6465, userId: 45, username: mvsoledad, reason: idle
+[26-Feb-2026 16:28:20 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6465
+[26-Feb-2026 16:28:20 Asia/Manila] User logout logged: mvsoledad - Reason: idle
+[26-Feb-2026 16:28:49 Asia/Manila] LoginLogger: Logout attempt - logId: 6440, userId: 17, username: smcumpio, reason: idle
+[26-Feb-2026 16:28:49 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6440
+[26-Feb-2026 16:28:49 Asia/Manila] User logout logged: smcumpio - Reason: idle
+[26-Feb-2026 16:50:46 Asia/Manila] LoginLogger: Logout attempt - logId: 6463, userId: 14, username: etcasinillo, reason: manual
+[26-Feb-2026 16:50:46 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6463
+[26-Feb-2026 16:50:46 Asia/Manila] User logout logged: etcasinillo - Reason: manual
+[27-Feb-2026 14:23:24 Asia/Manila] LoginLogger: Logout attempt - logId: 6531, userId: 63, username: ytclaridad, reason: idle
+[27-Feb-2026 14:23:24 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6531
+[27-Feb-2026 14:23:24 Asia/Manila] User logout logged: ytclaridad - Reason: idle
+[27-Feb-2026 16:25:56 Asia/Manila] LoginLogger: Logout attempt - logId: 6536, userId: 42, username: rasanglay, reason: idle
+[27-Feb-2026 16:25:56 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6536
+[27-Feb-2026 16:25:56 Asia/Manila] User logout logged: rasanglay - Reason: idle
+[27-Feb-2026 17:16:00 Asia/Manila] LoginLogger: Logout attempt - logId: 6488, userId: 45, username: mvsoledad, reason: idle
+[27-Feb-2026 17:16:00 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6488
+[27-Feb-2026 17:16:00 Asia/Manila] User logout logged: mvsoledad - Reason: idle
+[27-Feb-2026 17:19:33 Asia/Manila] LoginLogger: Logout attempt - logId: 6549, userId: 3, username: rmamor, reason: manual
+[27-Feb-2026 17:19:33 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6549
+[27-Feb-2026 17:19:33 Asia/Manila] User logout logged: rmamor - Reason: manual
+[27-Feb-2026 18:04:23 Asia/Manila] LoginLogger: Logout attempt - logId: 6559, userId: 45, username: mvsoledad, reason: manual
+[27-Feb-2026 18:04:23 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6559
+[27-Feb-2026 18:04:23 Asia/Manila] User logout logged: mvsoledad - Reason: manual
+[27-Feb-2026 18:04:32 Asia/Manila] LoginLogger: Logout attempt - logId: 6542, userId: 5, username: btarcelo, reason: manual
+[27-Feb-2026 18:04:32 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6542
+[27-Feb-2026 18:04:32 Asia/Manila] User logout logged: btarcelo - Reason: manual
+[27-Feb-2026 18:07:14 Asia/Manila] LoginLogger: Logout attempt - logId: 6522, userId: 25, username: dffuentes, reason: idle
+[27-Feb-2026 18:07:14 Asia/Manila] LoginLogger: Logout logged successfully using log ID: 6522
+[27-Feb-2026 18:07:14 Asia/Manila] User logout logged: dffuentes - Reason: idle

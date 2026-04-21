@@ -1,0 +1,56 @@
+<!-- vendor_css.html -->
+
+<!-- CRITICAL: Preconnects for faster font loading -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<!-- CRITICAL: Local assets (blocking, must load before paint) -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+
+<!-- NON-CRITICAL: CDN assets loaded asynchronously to avoid blocking paint -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" onload="this.media='all'">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"
+    rel="stylesheet" media="print" onload="this.media='all'">
+<link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"
+    rel="stylesheet" media="print" onload="this.media='all'">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet" media="print" onload="this.media='all'">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" media="print" onload="this.media='all'">
+<link href="assets/vendor/quill/quill.snow.css"
+    rel="stylesheet" media="print" onload="this.media='all'">
+<link href="assets/vendor/quill/quill.bubble.css"
+    rel="stylesheet" media="print" onload="this.media='all'">
+
+<!-- Fallback for browsers with JS disabled -->
+<noscript>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+</noscript>
+
+<style>
+    body, html { overflow-x: hidden; }
+    * { box-sizing: border-box; }
+    .row { margin-left: 0; margin-right: 0; }
+    .main { max-width: 100vw; flex: 1; }
+    .footer {
+        position: fixed;
+        bottom: 0; left: 0;
+        width: 100%;
+        background: #f8f9fa;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+        z-index: 1030;
+    }
+</style>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found - CSC RO VIII</title>
+  <meta name="description" content="404 Error - Page not found">
+  
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts - Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --accent-color: #0077b6;
+      --accent-light: #0096c7;
+      --accent-dark: #005577;
+    }
+    
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      background: linear-gradient(135deg, rgba(0, 119, 182, 0.6), rgba(0, 150, 199, 0.5)), 
+                  url('img/csc_404bg.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .error-container {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      padding: 3rem;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      animation: fadeInUp 0.8s ease-out;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .error-number {
+      font-size: 8rem;
+      font-weight: 700;
+      color: white;
+      text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      margin-bottom: 1rem;
+      line-height: 1;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+    
+    .error-message {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: white;
+      margin-bottom: 2rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .btn-home {
+      background: linear-gradient(45deg, var(--accent-color), var(--accent-light));
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 119, 182, 0.4);
+    }
+    
+    .btn-home:hover {
+      background: linear-gradient(45deg, var(--accent-dark), var(--accent-color));
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 119, 182, 0.6);
+      color: white;
+    }
+    
+    .footer-section {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .copyright, .credits {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .copyright strong {
+      color: white;
+      font-weight: 600;
+    }
+    
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--accent-color);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 119, 182, 0.4);
+      opacity: 0;
+      transform: scale(0);
+      animation: showBackToTop 1s ease-out 1s forwards;
+    }
+    
+    @keyframes showBackToTop {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    .back-to-top:hover {
+      background: var(--accent-dark);
+      transform: scale(1.1);
+      color: white;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .error-container {
+        margin: 1rem;
+        padding: 2rem;
+      }
+      
+      .error-number {
+        font-size: 6rem;
+      }
+      
+      .error-message {
+        font-size: 1.2rem;
+      }
+      
+      .btn-home {
+        padding: 10px 25px;
+        font-size: 1rem;
+      }
+      
+      .footer-section {
+        margin-top: 2rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .error-number {
+        font-size: 4.5rem;
+      }
+      
+      .error-message {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container-fluid">
+      <section class="min-vh-100 d-flex align-items-center justify-content-center py-5">
+        <div class="error-container">
+          <h1 class="error-number">404</h1>
+          <h2 class="error-message">The page you are looking for doesn't exist.</h2>
+          <a class="btn-home" href="login">
+            <i class="bi bi-house-door"></i>
+            Back to Home
+          </a>
+          
+          <div class="footer-section">
+            <div class="copyright">
+              &copy; Copyright <strong>Civil Service Commission - Regional Office VIII</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              CSC RO VIII - Information Technology Group
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <a href="#" class="back-to-top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Bootstrap 5.3.3 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    // Smooth scroll to top functionality
+    document.querySelector('.back-to-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Show/hide back to top button based on scroll position
+    window.addEventListener('scroll', function() {
+      const backToTop = document.querySelector('.back-to-top');
+      if (window.pageYOffset > 100) {
+        backToTop.style.opacity = '1';
+      } else {
+        backToTop.style.opacity = '0';
+      }
+    });
+
+    // Add some interactive elements
+    document.querySelector('.error-number').addEventListener('mouseenter', function() {
+      this.style.color = '#0077b6';
+      this.style.textShadow = '0 0 20px rgba(0, 119, 182, 0.5)';
+      this.style.webkitTextStroke = '2px white';
+    });
+
+    document.querySelector('.error-number').addEventListener('mouseleave', function() {
+      this.style.color = 'white';
+      this.style.textShadow = '0 10px 20px rgba(0, 0, 0, 0.5)';
+      this.style.webkitTextStroke = 'none';
+    });
+  </script>
+</body>
+</html>
